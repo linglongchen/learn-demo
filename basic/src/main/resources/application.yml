@@ -1,0 +1,21 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      discovery: #发现注册中心的服务
+        locator:
+          enabled: true
+      routes:
+        - id: route #当前服务
+          uri: localhost:8090
+          predicates:
+            - Path=/pm/**
+          #转发过滤第一个路径参数
+          filters:
+            - StripPrefix=1
+      httpclient:
+        connect-timeout: 5000
+        response-timeout: 5s

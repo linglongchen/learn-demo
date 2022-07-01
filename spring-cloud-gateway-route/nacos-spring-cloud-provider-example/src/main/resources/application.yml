@@ -1,0 +1,19 @@
+server:
+  port: 8070
+spring:
+  application:
+    name: service-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 24e777bc-12c0-4c9d-b4a5-217a16bc6a0b
+    gateway:
+      routes:
+        - id: consumer
+          uri: lb://service-consumer
+          predicates:
+            - Path=/api/server1/**
+          filters:
+            - StripPrefix=1
+

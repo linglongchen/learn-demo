@@ -1,0 +1,12 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: service-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 24e777bc-12c0-4c9d-b4a5-217a16bc6a0b
+
+
