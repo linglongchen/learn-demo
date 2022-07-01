@@ -27,12 +27,12 @@ dubbo的阉割版，手写的一个rpc组件，学习netty做的相应实现，�
 依赖zookeeper实现注册中心。
 - ##### 4.1 rpc-demo模块
 rpc组件的实现类，其中包含模块有：
-- > common-公共模块
-- >consumer-消费者实现模块
-- >loadBalance-负载均衡模块
-- >protocol-rpc协议模块
-- >provider-提供者模块
-- >registry-注册中心模块
-- >remoting-远程接口模块
-- ##### 4.2 rpc-test模块
+> common-公共模块\
+>consumer-消费者实现模块\
+>loadBalance-负载均衡模块\
+>protocol-rpc协议模块\
+>provider-提供者模块\
+>registry-注册中心模块\
+>remoting-远程接口模块
+##### 4.2 rpc-test模块
 rpc组件的example
