@@ -8,6 +8,7 @@
         <module>basic</module>
         <module>spring-cloud-gateway-route</module>
         <module>springcloud-seata-sharding-jdbc-mybatis-plus-samples</module>
+        <module>rpc</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

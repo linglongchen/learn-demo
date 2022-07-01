@@ -1,0 +1,7 @@
+server:
+  port: 8081
+
+rpc:
+  servicePort: 2182
+  registryType: ZOOKEEPER
+  registryAddr: 10.104.6.106:2181

@@ -1,0 +1,6 @@
+server:
+  port: 8083
+rpc:
+  servicePort: 2184
+  registryType: ZOOKEEPER
+  registryAddr: 10.104.6.106:2181

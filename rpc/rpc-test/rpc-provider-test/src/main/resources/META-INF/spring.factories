@@ -1,0 +1,2 @@
+com.modules.provider.api.TestInterface=\
+  com.modules.provider.service.ServiceTest
